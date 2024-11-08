@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Valderamos Reference Point</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f1f5f8; /* Light gray background */
+      margin: 0;
+      padding: 0;
+      color: #444; /* Darker font color for better readability */
+    }
+    header {
+      background-color: #003366; /* A deeper blue for the header */
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 26px;
+      letter-spacing: 1px;
+    }
+    .container {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+    .description {
+      background-color: #ffffff; /* White background for description */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease-in-out;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333; /* Darker text for better readability */
+    }
+    h2 {
+      color: #009900; /* Green for headings to make them stand out */
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .icon-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 20px 0;
+      align-items: center;
+    }
+    .contact-text {
+      font-size: 16px;
+      color: #333;
+      margin-right: 10px;
+    }
+    .icon {
+      font-size: 40px;
+      cursor: pointer;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    .icon:hover {
+      transform: scale(1.2);
+      opacity: 0.8; /* Slight transparency effect on hover */
+    }
+    .map-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .mapouter {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      height: 500px;
+      margin-top: 20px;
+      border-radius: 10px; /* Rounded corners for the map container */
+      overflow: hidden;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    }
+    .gmap_canvas {
+      width: 100%;
+      height: 100%;
+    }
+    .globe-image {
+      width: 50px; /* Reduced size for the globe icon */
+      margin-top: 10px;
+    }
+    .note {
+      background-color: #f8f9fa; /* Light background for the note */
+      padding: 15px;
+      margin-top: 20px;
+      font-size: 14px;
+      border-radius: 8px;
+      color: #333;
+      border: 1px solid #e0e0e0;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow for the note box */
+      text-align: left;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    /* Fade-in animation for description */
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+      header {
+        font-size: 22px; /* Adjust header size for smaller screens */
+      }
+      .container {
+        padding: 15px;
+      }
+      .description {
+        font-size: 14px;
+      }
+      .mapouter {
+        max-width: 100%;
+        height: 400px; /* Adjust height for smaller screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Valderamos Reference Point
+  </header>
+
+  <div class="container">
+    <div class="description">
+      <h2>Welcome to Valderamos Reference Point</h2>
+      <p>This location serves as a designated drop-off point for deliveries. It is not a residential or business area. Instead, it acts as a **navigation marker** to assist delivery riders, such as those from Shopee, Lazada, and other services, in finding the correct drop-off point. Please be aware that this location is not intended for personal visits or business operations. It’s meant exclusively for navigation and drop-off purposes.</p>
+    </div>
+
+    <div class="icon-container">
+      <!-- Contact Text and Email Icon -->
+      <span class="contact-text">Contact me via Gmail:</span>
+      <a href="mailto: ezzzz450@gmail.com" class="icon">
+        <img src="https://img.icons8.com/ios/50/000000/email-open.png" alt="Message Icon">
+      </a>
+    </div>
+
+    <!-- Globe Image (Map or Navigation Globe) placed below the "Location Map" text -->
+    <div class="map-container">
+      <h2>Location Map</h2>
+      <img class="globe-image" src="https://img.icons8.com/ios/452/globe.png" alt="Globe Icon">
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=800&height=500&hl=en&q=Valderamos%20reference%20Point%20isabela+(VALDERAMOS%20RESIDENTIAL%20%F0%9F%91%89%20VALDERAMOS%20REFERENCE%20POINT%20)&t=&z=12&ie=UTF8&iowloc=B&output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Note below the map -->
+    <div class="note">
+      <strong>Important Update:</strong> The location previously referred to as "Valderamos Residential" has been renamed to "Valderamos Reference Point." However, rest assured, the location address remains unchanged. 
+      <br><br>
+      Why the change? This adjustment was made to avoid confusion, as "Valderamos Residential" did not accurately reflect the nature of the said location, which is not a residential area. We've updated Google Maps to reflect this change and provide clearer information about the location in the description.
+    </div>
+
+    <footer>
+      All rights reserved <br> This site was made by Norwell with 💙
+    </footer>
+  </div>
+</body>
+</html>
